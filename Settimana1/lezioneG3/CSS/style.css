@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    width: 200px;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+#author {
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 1rem;
+}
+
+
+#featured span {
+    color: #b5460f;
+    display: block;
+}
+
+
+#sallyvegas {
+    text-align: center;
+    color: lightgray;
+}
+
+#container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+#aside {
+    text-align: left;
+    border-left: 2px solid lightsalmon;
+    padding-left: 1.5em;
+    margin-top: 2rem;
+}
+
+#featured {
+    color: orange;
+}
+
+.list {
+    text-align: left;
+
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+hr.linea {
+    border-top: 0.5px solid aqua;
+  }
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content video {
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 10px 20px #888888;
+}
+
+#author {
+    display: block;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 1rem;
+}
+
+
+#featured span {
+    color: #b5460f;
+    display: block;
+}
