@@ -15,7 +15,7 @@ console.log($biganimal);
 var savana_animal = 'Giraffa';
 console.log(savana_animal);
 
-var BigFive = 'Leone scritto da Javascript';
+var BigFive = '<div class="container">Leone scritto da Javascript</div>'; //si possono inserire anche tag con classi in JS
 document.write(BigFive);
 
 //var 12 = 'numero';
