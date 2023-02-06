@@ -1,7 +1,7 @@
 //var 1 pet_preferito = 'gatto';
 //console.log(1 pet_preferito);
 
-var pet_preferito = 'cane'
+var pet_preferito = 'cane';
 console.log('cane');
 
 /*var pet = 'gatto';
