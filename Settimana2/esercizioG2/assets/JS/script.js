@@ -16,26 +16,12 @@ document.getElementById('var').innerHTML = name1;
 document.getElementById('final').innerHTML = name1;
 document.getElementById('let2').innerHTML = name1;
 
-/*
 {
     let name1 = 'Carla';
     document.getElementById('let').innerHTML = name1;
     document.getElementById('let3').innerHTML = name1;
     document.getElementById('final2').innerHTML = name1;
 }
-*/
-
-var name1 = 'Mario';
-let name2 = 'Carla';
-
-document.getElementById('var').innerHTML = name1;
-document.getElementById('let').innerHTML = name2;
-document.getElementById('final').innerHTML = name1;
-
-document.getElementById('let2').innerHTML = name1;
-document.getElementById('let3').innerHTML = name2;
-document.getElementById('final2').innerHTML = name2;
-
 
 //Manipolare il valore di partenza per ottenere i seguenti risultati:
 
