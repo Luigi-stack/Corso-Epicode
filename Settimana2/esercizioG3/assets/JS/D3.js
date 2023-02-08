@@ -86,6 +86,7 @@ document.getElementById('es6').innerHTML = totale;
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+
 var a=10;
 var b=20;
 var c=30;
@@ -142,7 +143,7 @@ if (d % 2 == 0) {
       console.log("Uguale a 7 o maggiore");
     }
 
-
+document.getElementById('es10').innerHTML = 'controllare il consol.log';
 
 
 /* ESERCIZIO 11
@@ -178,7 +179,7 @@ document.getElementById('es13').innerHTML = me.skills;
 */
 
 var array1 = [];
-array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+array1.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 document.getElementById('es14').innerHTML = array1;
 
 
