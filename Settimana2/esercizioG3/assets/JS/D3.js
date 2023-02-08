@@ -86,36 +86,6 @@ document.getElementById('es6').innerHTML = totale;
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-
-/*let a = 10;
-let b = 5;
-let c = 15;
-
-if (a >= b && a >=c) {
-
-}
-
-if (a >= b && a >= c) {
-  if (b >= c) {
-    console.log(a, b, c);
-  } else {
-    console.log(a, c, b);
-  }
-} else if (b >= a && b >= c) {
-  if (a >= c) {
-    console.log(b, a, c);
-  } else {
-    console.log(b, c, a);
-  }
-} else {
-  if (a >= b) {
-    console.log(c, a, b);
-  } else {
-    console.log(c, b, a);
-  }
-}
-*/
-
 var a=10;
 var b=20;
 var c=30;
