@@ -1,4 +1,3 @@
-
 function n(dato) {
     document.getElementById("operazioni").value += dato;
 }
@@ -12,5 +11,3 @@ function operazione() { //esegue operazioni
 function cancella() { //funzione cancella
     document.getElementById("operazioni").value = "";
 }
-
-
