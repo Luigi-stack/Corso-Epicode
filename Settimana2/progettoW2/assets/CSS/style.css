@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 179, 29, 1) 62%, rgba(248, 255, 0, 1) 100%);
+}
+
+#titoli {
+margin: 2.5em;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#container {
+    background-color: black;
+    display: inline-block;
+    padding: 1.5em;
+    border: 1px solid #96b31d;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.tasto {
+    font-weight: bold;
+    background-color: #3b3f46;
+    color: #96b31d;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #96b31d;
+    margin: 5px;
+}
+
+.tasto:hover {
+    background-color: #637713;
+}
+
+.display {
+    background-color: rgba(255, 255, 255, 0.436);
+    color: #94b21c;
+    font-size: 35px;
+    text-align: end;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #96b31d;
+    margin-bottom: 20px;
+}
+
+.uguale,
+.display {
+    width: 234px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cancella {
+    background-color: #96b31d;
+    color: #3b3f46;
+}
+
+.uguale {
+    margin-top: 10px;
+    background-color: #96b31d;
+    color: #3b3f46;
+}

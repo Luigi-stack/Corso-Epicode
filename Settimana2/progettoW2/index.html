@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice con Javascript</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <header id="titoli">
+        <h1>La mia calcolatrice con Javascript</h1>
+        <p>Esercizio svolto per il progetto settimanale di Epicode - School</p>
+    </header>
+
+    <main>
+        <div id="container">
+
+            <div class="numbers" id="screen">
+                <input type="text" id="operazioni" class="display" disabled>
+            </div>
+    
+            <div id="calculator" class="numbers">
+    
+                <div class="numbers">
+    
+                    <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+    
+                </div>
+    
+                <div class="numbers">
+    
+                    <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+    
+                </div>
+    
+                <div class="numbers">
+    
+                    <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="*" value="x" onclick="n(this.id)" class="tasto">
+    
+                </div>
+    
+                <div class="numbers">
+    
+                    <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+                    <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+                    <input type="submit" value="C" onclick="cancella()" class="cancella tasto">
+                    
+                </div>
+                
+                <div class="numbers">
+                    
+                    <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+    
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
