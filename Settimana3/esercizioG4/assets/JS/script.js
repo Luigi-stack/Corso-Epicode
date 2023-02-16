@@ -109,6 +109,6 @@ const inputField = document.getElementById("input-field");
        Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
        */
 
-            window.onload = function () {
-        alert('Benevenuto')
-      }
+window.onload = function () {
+  alert('Benevenuto')
+}
