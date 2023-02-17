@@ -234,6 +234,8 @@ function deleteProp(obj, stringa) {
   }
 };
 
+console.log(deleteProp(obj, stringa));
+
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
@@ -242,6 +244,8 @@ function newestMovie(movies) {
   movies.sort((a, b) => b.Year - a.Year);
   return movies[0];
 }
+
+console.log(newestMovie(movies));
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
@@ -260,6 +264,8 @@ function onlyTheYears(movies) {
   return years;
 };
 
+console.log(onlyTheYears(movies));
+
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
@@ -268,6 +274,8 @@ function onlyInLastMillennium(movies) {
   const mill = movies.filter((movie) => Number(movie.Year) < 2000);
   return mill;
 };
+
+console.log(onlyInLastMillennium(movies));
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
