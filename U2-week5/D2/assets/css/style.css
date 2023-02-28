@@ -127,8 +127,8 @@ section h2 {
   width: 150px;
   bottom: 40px;
   left: 15px;
-  -webkit-box-shadow: 4px 4px 3px -1px #000000; 
-box-shadow: 4px 4px 3px -1px #000000;
+  -webkit-box-shadow: 4px 4px 3px -1px #000000;
+  box-shadow: 4px 4px 3px -1px #000000;
 }
 
 .Titleunderline {
@@ -179,6 +179,7 @@ h1+p {
     margin-top: 320px;
     z-index: 1;
   }
+
   header {
     position: fixed;
     width: 92%;
@@ -223,13 +224,17 @@ h1+p {
     margin-top: 225px;
     z-index: 1;
   }
-  .calendar, .plus {
+
+  .calendar,
+  .plus {
     position: fixed;
   }
+
   .calendar {
     bottom: 90px;
     right: -25px;
   }
+
   .plus {
     bottom: 180px;
     right: -25px;
@@ -246,13 +251,16 @@ h1+p {
     bottom: 51px;
     width: 520px;
   }
-  
+
   .calendar {
+    /* aggiunto altezza e larghezza per i bottoni */
     top: 10px;
     width: 74px;
     height: 74px;
   }
+
   .plus {
+    /* aggiunto altezza e larghezza per i bottoni */
     top: 100px;
     width: 74px;
     height: 74px;
@@ -519,7 +527,7 @@ footer a {
 .arrow {
   background-color: rgba(255, 255, 255, 0.483);
   color: #a02571;
-  -webkit-box-shadow: 5px 5px 50px 5px #FFC3FD; 
+  -webkit-box-shadow: 5px 5px 50px 5px #FFC3FD;
   box-shadow: 5px 5px 50px 5px #FFC3FD;
   border-radius: 25%;
   border: 2px solid white;
@@ -532,10 +540,11 @@ footer a {
   z-index: 4;
 }
 
-.calendar, .plus {
+.calendar,
+.plus {
   background-color: rgba(255, 255, 255, 0.483);
   color: blue;
-  -webkit-box-shadow: 5px 5px 50px 5px #FFC3FD; 
+  -webkit-box-shadow: 5px 5px 50px 5px #FFC3FD;
   box-shadow: 5px 5px 50px 5px #FFC3FD;
   border-radius: 25%;
   border: 2px solid white;
@@ -545,12 +554,12 @@ footer a {
   z-index: 4;
 }
 
-.fa-tag{
+.fa-tag {
   color: lightgray;
   font-size: 90px;
   float: right;
 }
 
-.fa-calendar-alt{
-margin-top: 70px;
+.fa-calendar-alt {
+  margin-top: 70px;
 }
