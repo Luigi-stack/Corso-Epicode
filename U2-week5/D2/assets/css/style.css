@@ -213,6 +213,7 @@ h1+p {
 
   header {
     position: fixed;
+    /* avrei potuto utilizzare anche position:sticky */
     width: 95%;
     top: 9%;
     left: 50%;
