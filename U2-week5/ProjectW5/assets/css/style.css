@@ -57,6 +57,9 @@ nav {
     padding: 0.5em 2em 0.5em 2em;
 }
 
+.contenitoreTop {
+    margin: 0 2.5em 2.5em 0;
+}
 /* header */
 
 header {
@@ -114,11 +117,7 @@ header {
     font-weight: bold;
 }
 
-/* .contenitore {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
+
 .author img {
     width: 20px;
     margin-right: 10px;
@@ -146,6 +145,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 50px;
+    margin-top: 70px;
 }
 
 .contCard p {
@@ -193,13 +194,13 @@ header {
 }
 
 .contenitore {
-    margin: 50px;
+margin: 20px;
 }
 
 
 .cardBottom {
     width: 100%;
-    margin: 0;
+    margin-left: 25px;
 }
 
 #textArticle {
@@ -221,7 +222,7 @@ header {
 .aside {
     margin: 60px;
     width: 500px;
-    margin-right: 100px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
