@@ -11,6 +11,7 @@ body {
     font-family: 'Bree Serif';
     font-size: 2em;
 }
+
 #testoAlternato {
     border: 5px solid gray;
     margin: 1.5em;
@@ -21,44 +22,42 @@ p {
     line-height: 2em;
 }
 
-.parole {
-  color: red;
-  overflow: hidden;
-  animation: openclose 5s ease-in-out infinite;
-
+.parole i {
+    color: red;
+    position: absolute;
+    transform: translateY(-100%);
+    opacity: 0;
 }
+
 
 @keyframes openclose {
     0% {
       opacity: 0;
-      transform: translateY(-50px);
+      transform: translateY(-100%);
+
     }
     25% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
     50% {
         opacity: 1;
-        transform: translateY(0px);
-    }
-    75% {
-        opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(0);
     }
     100% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(100%);
     }
   }
 
-  .parole .primo {
-    animation-delay: 0s;
+.primo {
+    animation: openclose 0s ;
   }
 
-  .parole .secondo {
-    animation-delay: 20s;
+.secondo {
+    animation: openclose 20s  ;
   }
 
-  .parole .terzo {
-    animation-delay: 4s;
+.terzo {
+    animation: openclose 40s  ;
   }
