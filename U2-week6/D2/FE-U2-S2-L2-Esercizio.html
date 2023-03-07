@@ -1,102 +1,13 @@
-<!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
-
-In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
-
-Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
-
-
-Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
-
-Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
-Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
-
-Esercizi:
-
-1) Implementa una navbar con questi elementi di menu:
-Home
-Saldi
-Welcome Summer
-Last Minute
-Recensioni
-
-Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
-
-2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
-
-3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
-una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
-
-Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
-
-4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
-
-In questa sezione dovranno esserci:
-
-4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
-3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
-2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
-
-le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
-
-5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
-
-In questa sezione dovranno esserci:
-
-6 card per destinazioni per linea a schermo extra large
-3 card per destinazioni per linea a schermo grande (desktop)
-2 card per destinazioni per linea a schermo medio (tablet)
-2 card per destinazioni per linea a schermo piccolo (mobile)
-
-6) Implementa la sezione "Offerta del giorno". Qui avrai:
-
-66% dello spazio dedicato all'immagine del luogo di destinazione
-33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
-
-l'immagine avrà i bordi arrotondati e un'ombra leggera
-per il contenuto: il nome dovrà essere più grande del resto,
-le date dovranno essere formattate con font "monospace",
-il prezzo dovrà essere definito come "lead"
-e il badge sarà scuro
-
-
-7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
-
-8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
-
-9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
-
-10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
-Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
-
-11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
-
-
-
-EXTRAS
-
-12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
-
-13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
-
-14) Crea un modale con un campo email e un messaggio.
-
-15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
-
-16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra.
-
-17) Crea una funzione che rimuova tutte le "card" dalla pagina
-
--->
-
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Travel agency</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -306,19 +217,22 @@ EXTRAS
             </div>
             <div class="row">
                 <div class="col col-sm-4 col-md-5 col-lg-8">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
                 </div>
                 <div class="col col-sm8 col-md-7 col-lg-4 d-flex flex-column justify-content-center">
                     <h5>Cap Skirring</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut quod quia tempore est obcaecati facere id enim? Quisquam, quibusdam at aut ipsa magnam sint enim ad itaque est officia?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut quod quia tempore est
+                        obcaecati facere id enim? Quisquam, quibusdam at aut ipsa magnam sint enim ad itaque est
+                        officia?</p>
                     <p><small>Last updated 3 mins ago</small></p>
-                    <button type="button" class="btn btn-dark btn-sm rounded-pill p-0" style="width: 65%;">Best Offer</button>
+                    <button type="button" class="btn btn-dark btn-sm rounded-pill p-0" style="width: 65%;">Best
+                        Offer</button>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <article>
         <div class="container mt-5">
             <div class="row">
@@ -326,40 +240,137 @@ EXTRAS
                     <h3>Offerta del giorno </h3>
                 </div>
             </div>
-            <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-5">
                 <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
-                </div>
-                
-                <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
                 </div>
 
                 <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
                 </div>
 
                 <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
                 </div>
 
                 <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
                 </div>
 
                 <div class="col">
-                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg" class="shadow bg-body-tertiary img-fluid rounded"
-                        alt="palm tree">
-                </div>            
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
+                </div>
+
+                <div class="col">
+                    <img src="https://img.ev.mu/images/attractions/3149/960x640/16141.jpg"
+                        class="shadow bg-body-tertiary img-fluid rounded" alt="palm tree">
+                </div>
             </div>
         </div>
-
     </article>
+
+    <article>
+        <h3 class="text-center mt-5 mb-3">Dicono di noi</h3>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti?</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                        doloremque magnam sint voluptate laborum iusto ducimus ea odio temporibus! Quis harum minima
+                        neque dolorum eaque at provident quos doloribus pariatur! Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Quaerat corrupti id nisi harum. Voluptatibus beatae consequatur
+                        quos suscipit hic quaerat officiis libero tenetur. Necessitatibus vitae, fuga nisi at voluptate
+                        maiores!</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+                        dolore totam esse molestiae sit optio obcaecati perferendis adipisci harum odio fuga voluptate
+                        quidem soluta omnis id necessitatibus aut velit saepe. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quae, quaerat non, modi architecto cupiditate laboriosam reprehenderit, cum
+                        eius ut quis culpa aut nobis delectus officiis iusto nostrum quam reiciendis perspiciatis.lorem
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias perferendis nulla nisi,
+                        laudantium repellendus ullam odio enim quo dolore voluptates culpa recusandae voluptate incidunt
+                        magni libero adipisci earum blanditiis?</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti?</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore
+                        eligendi eius maxime sint vel, sunt fugiat unde minus repellat, doloremque commodi beatae
+                        aperiam, nam incidunt fuga quis exercitationem recusandae.</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col col-2 col-md-1">
+                    <i class="fs-1 bi bi-person-circle text-info"></i>
+                </div>
+                <div class="col col-10 col-md-11">
+                    <p class="fs-5">Username
+                    <p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime delectus illo asperiores
+                        reiciendis, dolor architecto pariatur dolorum facilis, fuga veniam non itaque nam cum ea aliquam
+                        ad repellendus corrupti?</p>
+                </div>
+            </div>
+    </article>
+
+    <footer class="bg-dark p-4 text-center">
+        <button type="button" class="btn btn-outline-secondary">Contattaci</button>
+        <p class="text-light mt-4"><i class="bi bi-c-circle text-light"></i>2023 Time to Travel Agency. All Rights
+            Reserved.</p>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
