@@ -1,0 +1,24 @@
+@import './partials/_bottoni.scss';
+@import './partials/colori';
+
+@import './partials/_font.scss';
+@import './partials/_mixin.scss';
+@import './partials/_animations.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.hero {
+    @include flex-row;
+    background-color: $bgHero;
+}
+
+nav {
+    @include flex-center;
+}
+
+.container-btn {
+    @include flex-center;
+}
+
+.containerCard {
+    @include flex-center;
+}
