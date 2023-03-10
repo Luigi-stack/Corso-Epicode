@@ -1,21 +1,29 @@
 .carouselTrendingNow img,
 .carouselWatchIt img,
-.carouselNewReleases img 
- {
+.carouselNewReleases img {
     width: 250px;
+}
+
+
+.film {
+    transition: transform 0.3s;
+    transition-timing-function: linear;
+    z-index: 0;
+}
+
+.film:hover {
+    transform: rotate(0deg) scale(1.1);
+    z-index: 1;
 }
 
 footer {
     font-size: 0.7em;
 }
 
-.film {
-        transition: transform 0.3s;
-        transition-timing-function: linear;
-        z-index: 0;
+.iconImg img {
+    width: 150px;
 }
 
-.film:hover {
-        transform: rotate(0deg) scale(1.1);
-        z-index: 1;
-    }
+.UserName {
+    margin-right: 15em;
+}
