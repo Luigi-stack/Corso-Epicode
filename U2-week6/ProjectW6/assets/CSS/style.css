@@ -27,3 +27,8 @@ footer {
 .UserName {
     margin-right: 15em;
 }
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
