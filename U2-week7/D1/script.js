@@ -1,25 +1,26 @@
-class User {
-    constructor (firstName, lastName, age, location) {
-        this.firstName = firstName
-        this.lastName = lastName
-        this.age = age
-        this.location = location
-    }
-    compareAge(anotherUser) {
-        if (this.age < anotherUser.age) {
-          return `${anotherUser.firstName} è più vecchio di ${this.firstName}.`
-        } else if (this.age > anotherUser.age) {
-          return `${anotherUser.firstName} è più giovane di ${this.firstName}.`
-        } else {
-          return `${anotherUser.firstName} è della stessa età di ${this.firstName}.`
-        }
-      }
-}
+// ESERCIZIO 1
+// class User {
+//     constructor (firstName, lastName, age, location) {
+//         this.firstName = firstName
+//         this.lastName = lastName
+//         this.age = age
+//         this.location = location
+//     }
+//     compareAge(anotherUser) {
+//         if (this.age < anotherUser.age) {
+//           return `${anotherUser.firstName} è più vecchio di ${this.firstName}.`
+//         } else if (this.age > anotherUser.age) {
+//           return `${anotherUser.firstName} è più giovane di ${this.firstName}.`
+//         } else {
+//           return `${anotherUser.firstName} è della stessa età di ${this.firstName}.`
+//         }
+//       }
+// }
 
-const User1 = new User ('Luigi, Iossa', '29', 'Dakar')
-const User2 = new User ('Mario', 'Rossi', '35', 'Milan')
+// const User1 = new User ('Luigi, Iossa', '29', 'Dakar')
+// const User2 = new User ('Mario', 'Rossi', '35', 'Milan')
 
-console.log(User1.compareAge(User12))
+// console.log(User1.compareAge(User12))
 
 
 // ESERCIZIO 2
