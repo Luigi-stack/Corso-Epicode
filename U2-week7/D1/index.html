@@ -9,27 +9,28 @@
 </head>
 
 <body>
-    <form id="myForm">
-        <label>PET NAME:</label>
-        <input type="text" id="petName" name="petName" />
-        <br> <br>
-        <label>OWNER NAME:</label>
-        <input type="text" id="ownerName" name="ownerName" />
-        <br> <br>
-        <label>SPECIES:</label>
-        <input type="text" id="species" name="species" />
-        <br> <br>
-        <label>BREED:</label>
-        <input type="text" id="breed" name="breed" />
-        <br> <br>
-        <input type="button" id="add" value="Aggiungi" onclick="addToTable()" />
-    </form>
-
-    <ul id="petList"> </ul>
-
-
-
-    
+    <div>
+        <input
+          type="text"
+          id="petName-field"
+          placeholder="Inserisci nome animale"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="ownerName-field"
+          placeholder="Inserisci nome proprietario"
+        />
+      </div>
+      <div>
+        <input type="text" id="species-field" placeholder="Inserisci specie" />
+      </div>
+      <div>
+        <input type="text" id="breed-field" placeholder="Inserisci razza" />
+      </div>
+      <button id="add">Aggiungi</button>
+      <ul id="petList"></ul>
     <script src="./script.js"></script>
 </body>
 
