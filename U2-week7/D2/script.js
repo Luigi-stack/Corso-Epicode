@@ -7,7 +7,6 @@ const nameList = document.getElementById("name-list");
 
 if (localStorage.getItem("userData")) {
   const userData = JSON.parse(localStorage.getItem("userData"));
- 
 }
 
 
