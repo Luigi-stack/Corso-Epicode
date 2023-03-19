@@ -1,5 +1,5 @@
 const API = 'https://striveschool-api.herokuapp.com/api/product/';
-const Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2NzkwNTcyNTMsImV4cCI6MTY4MDI2Njg1M30.Ttdf3lztH2nkfMUT9T6juYDsZeEB0Jipwj-5YrosmA4"
+const Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE1YzAyNTE3N2Y3MDAwMTNjNWVhZjgiLCJpYXQiOjE2NzkxNDcwNDUsImV4cCI6MTY4MDM1NjY0NX0.gSPER87zkQ7ztslfDGIntGFXo2uKuPsOqio0I0NQDV8"
 
 let eventId = new URLSearchParams(window.location.search).get('eventId')
 console.log('EVENTID', eventId)

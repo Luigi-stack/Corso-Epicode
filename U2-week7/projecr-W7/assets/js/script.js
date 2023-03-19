@@ -1,5 +1,5 @@
 const API = 'https://striveschool-api.herokuapp.com/api/product/';
-const Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgxN2M1ZWU3ODE4NzAwMTVjMjY3YTgiLCJpYXQiOjE2NzkwNTcyNTMsImV4cCI6MTY4MDI2Njg1M30.Ttdf3lztH2nkfMUT9T6juYDsZeEB0Jipwj-5YrosmA4"
+const Authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE1YzAyNTE3N2Y3MDAwMTNjNWVhZjgiLCJpYXQiOjE2NzkxNDcwNDUsImV4cCI6MTY4MDM1NjY0NX0.gSPER87zkQ7ztslfDGIntGFXo2uKuPsOqio0I0NQDV8"
 
 const myShop = function () {
 
@@ -20,13 +20,15 @@ const myShop = function () {
         console.log(shopElement);
         let shop = document.getElementById("shopContainer");
         shop.innerHTML += `
-          <div class="card w-25 m-2">
+        <div class="col">
+          <div class="card m-2">
           <img src="${shopElement.imageUrl}"  width="100px"  class="card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title">${shopElement.name}</h5>
             <p class="card-text">${shopElement.description}</p>
             <a href="details.html?eventId=${shopElement._id}" class="btn btn-primary">details</a>
           </div>
+        </div>
         </div>
               `;
       })
