@@ -6,7 +6,7 @@ console.log('EVENTID', eventId)
 
 const myShop = function () {
 
-    fetch(API, {
+    fetch(API + eventId, {
         method: 'GET',
         headers: {
             "Authorization": Authorization,
@@ -19,33 +19,29 @@ const myShop = function () {
         })
         .then((events) => {
             console.log(events)
-            events.forEach((shopElement) => {
-                console.log(shopElement);
-                let shop = document.getElementById("details-container");
-                shop.innerHTML = `
-                <h1>Dettagli prodotto</h1>
-                <img class="mb-5" src="${shopElement.imageUrl}" alt="">
-          <h3>Name</h3>
-        <input class="mb-3" id='input' type="text" value="${shopElement.name}" >
-          <h3>Description</h3>
-          <input class="mb-3" id='input' type="text" value="${shopElement.description}" >
-          <h3>Brand</h3>
-          <input class="mb-3" id='input' type="text" value="${shopElement.brand}" >
-          <h3>Image Url</h3>
-          <input class="mb-3" id='input' type="text" value="${shopElement.imageUrl}" >
-          <h3>Price</h3>
-          <input class="mb-3" id='input' type="text" value="${shopElement.price}" >
-          <h6>SERVER INFO</h6>
-          <ul>
-              <li>${shopElement.createdAt}</li>
-              <li>${shopElement.updatedAt}</li>
-          </ul>
+            let shop = document.getElementById("details-container");
+            shop.innerHTML = `
+            <div class="container mt-5">
+            <div class="row">
+              <div class="col offset-1 col-12 col-md-5">
+                <img src="${events.imageUrl}" class="w-75" alt="" />
+              </div>
+              <div class="col col-12 col-md-5 mt-2">
+                <h2>${events.name}</h2>
+                <h5 class="mt-2">Descrizione</h5>
+                <p>${events.description}</p>
+                <h5>Brand</h5>
+                <p>${events.brand}</p>
+                <h5>Prezzo</h5>
+                <p>${events.price}€</p>
+                <br />
+              </div>
+            </div>
+          </div>
       </div>
-      <a href="change.html?eventId=${shopElement._id}" id="buttonModify" class="my-2 btn btn-primary">Modifica</a>
+      <a href="back_office.html?eventId=${events._id}" id="buttonModify" class="my-2 btn btn-primary">Modifica</a>
       </div>
       `;
-            })
-
         })
 }
 
